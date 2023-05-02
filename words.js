@@ -37,7 +37,7 @@ window.onload = function(argument) {
 				c.font = words_attr[i].font;
 				c.fillText(words_attr[i].text, words_attr[i].x, words_attr[i].y);
 				words_attr[i].width = c.measureText(words_attr[i].text).width;
-				c.fillStyle = 'hsl(' + 360 * Math.random() + ', 50%, 50%)';
+				//c.fillStyle = 'hsl(' + 360 * Math.random() + ', 50%, 50%)';
 				c.stroke();
 			}
 			move();
@@ -56,6 +56,7 @@ window.onload = function(argument) {
 
 		setInterval(function() {
 			c.clearRect(0,0,w,h);
+			c.fillStyle = 'hsl(' + 360 * Math.random() + ', 50%, 50%)';
 			animation();
 		},24);
 
