@@ -20,8 +20,8 @@ window.onload = function(argument) {
 		c.lineWidth = 5;
 
 		function colorAssign(){
-			var colorArray = {
-			
+			var colorArray = {'#648FFF', '#785EF0', '#DC267F', '#FE6100', '#FFB000'}
+			c.fillStyle = colorArray[Math.random() * 4]; 
 			
 		
 		
@@ -33,6 +33,7 @@ window.onload = function(argument) {
 			this.font = words[key] * 50 + 'px arial'
 			this.speed = (words[key]);
 			//this.color = c.fillStyle = 'hsl(' + 360 * Math.random() + ', 50%, 50%)';
+			this.color = colorAssign(); 
 		}
 		for (key in words) {
 			words_attr.push(new Word(key));
@@ -44,7 +45,7 @@ window.onload = function(argument) {
 				c.font = words_attr[i].font;
 				c.fillText(words_attr[i].text, words_attr[i].x, words_attr[i].y);
 				words_attr[i].width = c.measureText(words_attr[i].text).width;
-				//c.fillStyle = words_attr[i].color; 
+				c.fillStyle = words_attr[i].color; 
 				c.stroke();
 			}
 			move();
