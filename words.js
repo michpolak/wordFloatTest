@@ -21,7 +21,8 @@ window.onload = function(argument) {
 
 		function colorAssign(){
 			var colorArray = ['#648FFF', '#785EF0', '#DC267F', '#FE6100', '#FFB000'];
-			c.fillStyle = colorArray[Math.random() * 4]; 
+			var colorRand = colorArray[Math.floor(Math.random()* 4)]; 
+			return colorRand; 
 		}
 		
 		// constructor
