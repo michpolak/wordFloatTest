@@ -20,7 +20,7 @@ window.onload = function(argument) {
 		c.lineWidth = 5;
 
 		function colorAssign(){
-			var colorArray = {'#648FFF', '#785EF0', '#DC267F', '#FE6100', '#FFB000'}
+			var colorArray = ['#648FFF', '#785EF0', '#DC267F', '#FE6100', '#FFB000'];
 			c.fillStyle = colorArray[Math.random() * 4]; 
 			
 		
