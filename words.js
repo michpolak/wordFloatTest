@@ -15,7 +15,7 @@ window.onload = function(argument) {
 			h = canvas.height;
 
 		c.strokeStyle = 'red';
-		c.fillStyle = 'white';
+		c.fillStyle = 'blue';
 		c.lineWidth = 5;
 
 		// constructor
