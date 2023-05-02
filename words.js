@@ -1,7 +1,7 @@
 window.onload = function(argument) {
 	String.fromCodePoint(128512)
 
-	var moby = String.fromCodePoint(00110001 01000110 00110100 00111001 01000101);
+	var moby = String.fromCodePoint(128512);
 	//var moby = "anger a fear sadness disgust enjoyment happiness love relief contentment amusement joy pride excitement peace satisfaction lonely heartbroken gloomy disappointed hopeless grieved unhappy lost troubled resigned miserable worried doubtful nervous anxious terrified panicked horrified desperate confused stressed annoyed frustrated peeved contrary bitter infuriated irritated mad cheated vengeful insulted dislike revulsion loathing disapproving offended horrified uncomfortable nauseated disturbed withdrawn aversion";
 	var words = {};
 	var words_attr = [];
