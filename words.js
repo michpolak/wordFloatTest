@@ -15,7 +15,8 @@ window.onload = function(argument) {
 			h = canvas.height;
 
 		c.strokeStyle = 'red';
-		c.fillStyle = 'blue';
+		//c.fillStyle = 'blue';
+		c.fillStyle = 'hsl(' + 360 * Math.random() + ', 50%, 50%)';
 		c.lineWidth = 5;
 
 		// constructor
