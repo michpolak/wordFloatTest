@@ -15,10 +15,16 @@ window.onload = function(argument) {
 			h = canvas.height;
 
 		c.strokeStyle = 'red';
-		//c.fillStyle = 'blue';
+		c.fillStyle = '255,255,0';
 		//c.fillStyle = 'hsl(' + 360 * Math.random() + ', 50%, 50%)';
 		c.lineWidth = 5;
 
+		function colorAssign(){
+			var colorArray = {
+			
+			
+		
+		
 		// constructor
 		Word = function(key) {
 			this.text = key;
@@ -26,7 +32,7 @@ window.onload = function(argument) {
 			this.y = Math.random() * h;
 			this.font = words[key] * 50 + 'px arial'
 			this.speed = (words[key]);
-			this.color = c.fillStyle = 'hsl(' + 360 * Math.random() + ', 50%, 50%)';
+			//this.color = c.fillStyle = 'hsl(' + 360 * Math.random() + ', 50%, 50%)';
 		}
 		for (key in words) {
 			words_attr.push(new Word(key));
@@ -38,7 +44,7 @@ window.onload = function(argument) {
 				c.font = words_attr[i].font;
 				c.fillText(words_attr[i].text, words_attr[i].x, words_attr[i].y);
 				words_attr[i].width = c.measureText(words_attr[i].text).width;
-				c.fillStyle = words_attr[i].color; 
+				//c.fillStyle = words_attr[i].color; 
 				c.stroke();
 			}
 			move();
